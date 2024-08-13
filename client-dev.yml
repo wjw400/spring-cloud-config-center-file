@@ -1,0 +1,4 @@
+server:
+  port: 6666 
+user:
+  role: 123
