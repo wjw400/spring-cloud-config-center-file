@@ -2,3 +2,10 @@ server:
   port: 7777 
 user:
   role: wang
+info:
+  app:
+    name: My Spring Cloud Application client2
+    description: This is a demo application for Spring Cloud.
+    version: 1.0.0
+  build:
+    time: 2024-08-14T12:00:00Z
