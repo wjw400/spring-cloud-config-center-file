@@ -1,7 +1,7 @@
 <configuration>
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <!-- 指定Logstash的主机和端口 -->
-        <destination>localhost:5000</destination>
+        <destination>logstash:5044</destination>
         
         <!-- 配置Logstash编码器 -->
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
