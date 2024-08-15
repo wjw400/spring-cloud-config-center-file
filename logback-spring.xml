@@ -1,0 +1,15 @@
+<configuration>
+    <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <!-- 指定Logstash的主机和端口 -->
+        <destination>localhost:5000</destination>
+        
+        <!-- 配置Logstash编码器 -->
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+
+    <root level="INFO">
+        <!-- 将日志输出到Logstash -->
+        <appender-ref ref="LOGSTASH" />
+    </root>
+</configuration>
+
